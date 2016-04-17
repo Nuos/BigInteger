@@ -113,7 +113,7 @@ BigInteger BigInteger::sqrt()
 
     while (x1 < x0) {
         x0 = x1;
-        x1 += val / x0;
+        x1 += (*this) / x0;
         x1 /= 2;
      }
 
